@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>HCI COGS 120 A5</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Links Bootstrap Library -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<!-- End Links Bootstrap Library -->
+		<link href="css/A4stylesheet.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+		<!-- JQuery Library -->
+		<script src="js/jquery.js"></script>
+		<!-- End JQuery Library -->
+	</head>
+
+	<body>
+		<div class="outer_container">
+			<div class="inner_container">
+				<div class="content_container">
+					<div class="nav_bar">
+						<div class="small_two_of_three">
+
+							<p><a href="index.html"><i class="arrow left"></i></a></p>
+							
+						</div>
+						<div class="big_one_of_three">
+							<h1 id="username" class="big_label">
+								<p id="date"></p>
+							</h1>
+						</div>
+						<div class="small_two_of_three">
+
+						</div>
+					</div>
+
+					<div class="holder">
+						<div class="routemap_holder">
+							<a href="first_location.html"><div id="first_location"><p class="location_names">1. Lunch</p></div></a>
+							<a href="second_location.html"><div id="second_location"><p class="location_names">2. Studying</p></div></a>
+							<a href="third_location.html"><div id="third_location"><p class="location_names">3. Research</p></div></a>
+							<a href="fourth_location.html"><div id="fourth_location"><p id="name_four" class="location_names"></p></div></a>
+							<a href="fifth_location.html"><div id="fifth_location"><p id="name_five" class="location_names"></p></div></a>
+							<a href="sixth_location.html"><div id="sixth_location"><p id="name_six" class="location_names"></p></div></a>
+							<div id="popup_container">
+								<div class="loader">
+								</div>
+								<h1 class="big_label text_center">Finding Location...</h1>
+							</div>
+						</div>
+						
+
+					</div>
+
+					<div class=bottom_buttons>
+						<div class="small_two_of_three">
+							<button class="add_button text_center">Add</button>
+						</div>
+						<div class="big_one_of_three text_center">
+							
+						</div>
+						<div class="small_two_of_three"></div>						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Own JS -->
+		<script>
+			n =  new Date();
+			y = n.getFullYear();
+			m = n.getMonth() + 1;
+			d = n.getDate();
+			username = localStorage.getItem("username");
+			document.getElementById("date").innerHTML = username + "'s Route (" + m + "/" + d + "/" + y + ")";
+			var location_one = $('#first_location');
+			var location_two = $('#second_location');
+			var location_three = $('#third_location');
+			var location_four = $('#fourth_location');
+			var location_five = $('#fifth_location');
+			var location_six = $('#sixth_location');
+			
+			if (localStorage.getItem("location_one_boolean") !== "true") {
+				location_one.hide();
+			} else {
+				location_one.show();
+			}
+			if (localStorage.getItem("location_two_boolean") !== "true") {
+				location_two.hide();
+			} else {
+				location_two.show();
+			}
+			if (localStorage.getItem("location_three_boolean") !== "true") {
+				location_three.hide();
+			} else {
+				location_three.show();
+			}
+			if (localStorage.getItem("location_four_boolean") !== "true") {
+				location_four.hide();
+				
+			} else {
+				location_four.show();
+				document.getElementById("name_four").innerHTML = "4. " + localStorage.getItem("eventFour_name");
+			}	
+			if (localStorage.getItem("location_five_boolean") !== "true") {
+				location_five.hide();
+			} else {
+				location_five.show();
+				document.getElementById("name_five").innerHTML = "5. " + localStorage.getItem("eventFive_name");
+			}
+			if (localStorage.getItem("location_six_boolean") !== "true") {
+				location_six.hide();
+			} else {
+				location_six.show();
+				document.getElementById("name_six").innerHTML = "6. " + localStorage.getItem("eventSix_name");
+			}
+
+		</script>
+		<script src="js/A4.js"></script>
+		<!-- End Own JS -->		
+		<!-- Bootstrap Library -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- End Bootstrap Library -->
+	</body>
+
+	<footer>
+		<div class="credits">
+			<h1>Copyright 2018</h1>
+			 <h2>Elias and Wang</h2>
+		</div>
+	</footer>
+</html>

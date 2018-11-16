@@ -1,0 +1,903 @@
+/* CSS Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* END OF CSS Reset */
+
+.contacts_ul {
+	font-family: 'Mali', cursive;
+	font-size:2em;
+}
+
+.month_button {
+	margin-left:60px;
+	width:50px;
+}
+
+.month_button li {
+	margin-right:15px;
+}
+
+.send_request_button {
+	
+	margin-left:5px;
+	font-size:1.5em;
+	font-family: 'Mali', cursive;	
+	height:100px;
+	width:200px;
+	box-shadow: 3px 3px 3px 3px #888888;
+	border-radius:10px;
+}
+
+.toggle_button {
+	border-radius:10%;
+	margin-left:10px;
+	height:50px;
+	width:50px;
+}
+
+.highlight {
+	background-color:yellow;
+}
+
+.add_contact_button {
+	margin-top:50px;
+	margin-left:5px;
+	font-size:1.5em;
+	font-family: 'Mali', cursive;	
+	height:50px;
+	width:100px;
+	box-shadow: 3px 3px 3px 3px #888888;
+	border-radius:10px;
+}
+
+.add_contact_button:hover {
+	box-shadow:5px 5px 5px 5px #888888;
+}
+
+.add_contact_button:active {
+	background-color:#888888;
+	transform:translateY(4px);
+}
+
+.add_contact_submit {
+	font-family: 'Mali', cursive;
+	padding:20px;
+	font-size:2em;
+	border-radius:5%;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.add_contact_submit:hover {
+	box-shadow:2px 2px 2px 2px;
+}
+
+.add_contact_submit:active {
+	background-color:#888888;
+	transform:translateY(4px);
+}
+
+.delete_event_button {
+	margin-top:50px;
+	margin-left:5px;
+	font-size:1.5em;
+	font-family: 'Mali', cursive;	
+	height:50px;
+	width:200px;
+	box-shadow: 3px 3px 3px 3px #888888;
+	border-radius:10px;
+}
+
+.invite_button {
+	margin-top:50px;
+	margin-left:5px;
+	font-size:1.5em;
+	font-family: 'Mali', cursive;	
+	height:50px;
+	width:100px;
+	box-shadow: 3px 3px 3px 3px #888888;
+	border-radius:10px;
+}
+
+.description_container {
+	width:300px;
+	height:200px;
+	position:absolute;
+	margin-top:-300px;
+	margin-left:425px;
+}
+
+.location_names {
+	width:300px;
+	height:20px;
+	margin-left:60px;
+	font-size:2em;
+	font-family: 'Mali', cursive;
+	color:black;
+}
+
+#first_location {
+	border-radius:100%;
+	width:50px;
+	height:50px;
+	background-color:black;
+	position:absolute;
+	margin-left:200px;
+	margin-top:50px;
+}
+
+#first_location:hover {
+	box-shadow:3px 6px #888888;
+}
+
+#second_location {
+	border-radius:100%;
+	width:50px;
+	height:50px;
+	background-color:yellow;
+	position:absolute;
+	margin-left:300px;
+	margin-top:100px;
+}
+
+#second_location:hover {
+	box-shadow:3px 6px #888888;
+
+}
+
+#third_location {
+	border-radius:100%;
+	width:50px;
+	height:50px;
+	background-color:red;
+	position:absolute;
+	margin-left:600px;
+	margin-top:300px;
+}
+
+#third_location:hover {
+	box-shadow:3px 6px #888888;
+
+}
+
+#fourth_location {
+	border-radius:100%;
+	width:50px;
+	height:50px;
+	background-color:blue;
+	position:absolute;
+	margin-left:100px;
+	margin-top:200px;
+}
+
+#fourth_location:hover {
+	box-shadow:3px 6px #888888;
+
+}
+
+#fifth_location {
+	border-radius:100%;
+	width:50px;
+	height:50px;
+	background-color:purple;
+	position:absolute;
+	margin-left:200px;
+	margin-top:300px;
+}
+
+#fifth_location:hover {
+	box-shadow:3px 6px #888888;
+
+}
+
+#sixth_location {
+	border-radius:100%;
+	width:50px;
+	height:50px;
+	background-color:green;
+	position:absolute;
+	margin-left:400px;
+	margin-top:200px;
+}
+
+#sixth_location:hover {
+	box-shadow:3px 6px #888888;
+
+}
+
+.routemap_holder {
+	height:100%;
+	width:100%;
+	background:url(../images/usersroute.png);
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+#username {
+	margin-top:-10px;
+}
+
+.contact_add_form {
+	width:100%;
+	margin:0 auto;
+}
+
+.add_name_field {
+	width: 50%;
+	min-width:300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.add_form {
+	width:50%;
+	float:left;
+}
+
+.map_container {
+	height:100%;
+	width:50%;
+	background:url(../images/pinpoint.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	float:right;
+}
+
+.map_container_check {
+	height:100%;
+	width:50%;
+	background:url(../images/pinpoint.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-top:20px;
+	margin-left:100px;
+}
+
+.cancel_submit {
+	font-family: 'Mali', cursive;
+	padding:20px;
+	font-size:2em;
+	border-radius:5%;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.cancel_submit:hover {
+	box-shadow:2px 2px 2px 2px;
+}
+
+.cancel_submit:active {
+	background-color:#888888;
+	transform:translateY(4px);
+
+}
+
+.add_submit {
+	font-family: 'Mali', cursive;
+	padding:20px;
+	font-size:2em;
+	border-radius:5%;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.add_submit:hover {
+	box-shadow:2px 2px 2px 2px;
+}
+
+.add_submit:active {
+	background-color:#888888;
+	transform:translateY(4px);
+}
+
+.add_submit_four {
+	font-family: 'Mali', cursive;
+	padding:20px;
+	font-size:2em;
+	border-radius:5%;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.add_submit_four:hover {
+	box-shadow:2px 2px 2px 2px;
+}
+
+.add_submit_four:active {
+	background-color:#888888;
+	transform:translateY(4px);
+
+}
+
+.add_submit_five {
+	font-family: 'Mali', cursive;
+	padding:20px;
+	font-size:2em;
+	border-radius:5%;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.add_submit_five:hover {
+	box-shadow:2px 2px 2px 2px;
+}
+
+.add_submit_five:active {
+	background-color:#888888;
+	transform:translateY(4px);
+
+}
+
+.add_submit_six {
+	font-family: 'Mali', cursive;
+	padding:20px;
+	font-size:2em;
+	border-radius:5%;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.add_submit_six:hover {
+	box-shadow:2px 2px 2px 2px;
+}
+
+.add_submit_six:active {
+	background-color:#888888;
+	transform:translateY(4px);
+
+}
+
+
+.add_event_field {
+	width: 50%;
+	min-width:300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.add_desc_field {
+	width: 50%;
+	min-width:300px;
+	min-height:200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+
+.medium_label {
+	text-align:center;
+	font-family: 'Mali', cursive;
+	font-size:2em;
+}
+
+#popup_container {
+	background-color:rgba(0, 0, 0, 0.3);
+	box-shadow:10px 10px 5px 5px #888888;
+	border:7px ridge;
+	border-radius:10px;
+	height:400px;
+	width:500px;
+	padding:5px;
+	display:none;
+	position:absolute;
+	z-index:2;
+	margin-left:200px;
+}
+
+/* Loader From W3 */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 300px;
+  height: 300px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin:0 auto;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* End of Loader from W3 */
+
+#date {
+	display:inline;
+}
+
+body {
+	background:url(../images/hip_square.png);
+}
+
+.add_button_pseudo {
+	margin-top:50px;
+	margin-left:5px;
+	font-size:1.5em;
+	font-family: 'Mali', cursive;	
+	height:50px;
+	width:100px;
+	box-shadow: 3px 3px 3px 3px #888888;
+	border-radius:10px;
+}
+
+.add_button {
+	margin-top:50px;
+	margin-left:5px;
+	font-size:1.5em;
+	font-family: 'Mali', cursive;	
+	height:50px;
+	width:100px;
+	box-shadow: 3px 3px 3px 3px #888888;
+	border-radius:10px;
+}
+
+.add_button:hover {
+	box-shadow:5px 5px 5px 5px #888888;
+}
+
+.add_button:active {
+	background-color:#888888;
+	transform:translateY(4px);
+}
+
+.route_container {
+	height:100%;
+	width:67%;
+	background:url(../images/routedummy.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin:0 auto;
+}
+
+i {
+	color:black;
+	margin-top:5px;
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    box-shadow:3px 3px;
+    display: inline-block;
+    padding: 10px;
+}
+
+i:hover {
+	color:white;
+	box-shadow:7px 7px;
+}
+
+.big_label {
+	margin-top:20px;
+	text-align:center;
+	font-family: 'Mali', cursive;
+	font-size:3em;
+}
+
+
+.left {
+
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.homepage_button_container {
+	margin:0 auto;
+	height:100%;
+	width:25%;
+	min-width:300px;
+}
+
+.signout_button {
+	font-family: 'Mali', cursive;
+	color:black;
+	font-size:2em;
+	padding:10px;
+}
+
+.signout_button:hover {
+	text-shadow:1px 1px;
+	color:black;
+}
+
+.homepage_button {
+	font-size:1.5em;
+	font-family: 'Mali', cursive;	
+	height:100px;
+	width:300px;
+	margin-top:25px;
+	box-shadow: 6px 10px #888888;
+	border-radius:10px;
+
+}
+
+.homepage_button:hover {
+	box-shadow:3px 3px 3px 3px;
+}
+
+.homepage_button:active {
+	background-color:#888888;
+	transform:translateY(4px);
+}
+
+.settings_wheel {
+	float:right;
+	height:50px;
+	width:50px;
+	background:url(../images/A4SettingsWheel.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+.settings_wheel:hover {
+	box-shadow:5px 5px 5px 5px #888888;
+}
+
+.form_holder {
+	text-align:center;
+}
+
+.signin_submit {
+	font-family: 'Mali', cursive;
+	padding:30px;
+	font-size:2em;
+	border-radius:5%;
+}
+
+.signin_submit:hover {
+	box-shadow:2px 2px 2px 2px;
+}
+
+.signin_submit:active {
+	background-color:#888888;
+	transform:translateY(4px);
+
+}
+
+.signin_form {
+	margin:15px auto;
+	width:100%;
+}
+
+.signin_field {
+	width: 50%;
+	min-width:300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#logo_big {
+	height:65%;
+	width:361px;
+	background:url(../images/A4Logo.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin:0 auto;
+}
+
+.logo_small {
+	height:100%;
+	width:100%;
+	background:url(../images/A4Logo.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin:0 auto;
+}
+
+.welcome_sign {
+	height:100%;
+	width:100%;
+	background:url(../images/A4Welcome.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	margin-left:150px;
+}
+
+.welcome {
+	margin-top:-10px;
+}
+
+.banner_font {
+	font-size:5em;
+}
+
+.text_center {
+	text-align:center;
+}
+
+
+
+
+footer {
+	width:100%;
+	height:100px;
+}
+
+.nav_bar {
+	height:15%;
+}
+
+.small_two_of_three {
+	display:inline-block;
+	float:left;
+	width:15%;
+	height:100%;
+}
+
+.big_one_of_three {
+	display:inline-block;
+	float:left;
+	width:70%;
+	height:100%;
+}
+
+.holder {
+	width:100%;
+	height:70%;
+	padding:20px;
+}
+
+.bottom_buttons {
+	height:15%;
+}
+
+.credits {
+	height:100%;
+	width:515px;
+	margin:0 auto;
+	padding:40px;
+	text-align:center;
+}
+
+.inner_container {
+	height:100%;
+	width:50%;
+	min-width:1000px;
+	margin:auto;
+}
+
+.content_container {
+	position: absolute;
+	padding:2%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	max-width:1000px;
+	height: 50%;
+	min-height:700px;
+	margin: auto;
+	background:url(../images/school.png);
+	border:10px ridge;
+	border-radius: 2%;
+	box-shadow: 10px 20px #888888;
+}
+
+/* CALENDER BY W3SCHOOLS */
+
+
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: black;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+}
+
+
+
+/* END OF CALDENDER */
+
+
+
+/* Responsive Design Break Points */
+
+@media only screen and (max-width: 1000px) {
+
+	.content_container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	max-width:900px;
+	height: 58%;
+	min-height:700px;
+	margin: auto;
+	background-color: #ccc;
+	border-radius: 2%;
+	}
+
+}
+
+@media only screen and (max-width: 900px) {
+
+
+	.content_container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	max-width:800px;
+	height: 66%;
+	min-height:700px;
+	margin: auto;
+	background-color: #ccc;
+	border-radius: 2%;
+	}
+	
+}
+
+@media only screen and (max-width: 800px) {
+
+	.route_container {
+		width:100%;
+	}
+
+	.content_container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	max-width:700px;
+	height: 74%;
+	min-height:700px;
+	margin: auto;
+	background-color: #ccc;
+	border-radius: 1%;
+	}
+	#logo_big {
+		width:60%;
+	}
+	i {
+		margin-top:15px;
+		margin-left:10px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+
+	.content_container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	max-width:600px;
+	height: 82%;
+	min-height:700px;
+	margin: auto;
+	background-color: #ccc;
+	border-radius:1%;
+	}
+
+	.welcome {
+		margin-top:20px;
+		width:90%;
+	}
+
+	#logo_big {
+		width:70%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	footer {
+		display:none;
+	}
+
+	.big_label {
+		font-size:2em;
+	}
+
+	.content_container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	max-width:515px;
+	height: 100%;
+	min-height:700px;
+	margin: auto;
+	background-color: #ccc;
+	border-radius:0px;
+	}
+	#logo_big {
+		width:100%;
+	}
+
+
+}

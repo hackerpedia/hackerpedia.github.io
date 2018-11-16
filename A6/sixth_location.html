@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>HCI COGS 120 A5</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Links Bootstrap Library -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<!-- End Links Bootstrap Library -->
+		<link href="css/A4stylesheet.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+		<!-- JQuery Library -->
+		<script src="js/jquery.js"></script>
+		<!-- End JQuery Library -->
+	</head>
+
+	<body>
+		<div class="outer_container">
+			<div class="inner_container">
+				<div class="content_container">
+					<div class="nav_bar">
+						<div class="small_two_of_three">
+
+							<p><a href="usersroute.html"><i class="arrow left"></i></a></p>
+							
+						</div>
+						<div class="big_one_of_three">
+							<h1 id="name_six" class="big_label"></h1>
+						</div>
+						<div class="small_two_of_three">
+
+						</div>
+					</div>
+
+					<div class="holder">
+						<h1 class="medium_label">123 ABC Street San Diego CA, 92111</h1>
+						<div class="map_container_check"></div>
+						<div id="desc_six" class="description_container"></div>
+					</div>
+
+					<div class=bottom_buttons>
+						<div class="small_two_of_three">
+							<a href="invitingpage.html"><button class="invite_button text_center">Invite</button></a>
+						</div>
+						<div class="big_one_of_three text_center">
+							<button class="delete_event_button text_center" onClick="deleteEvent_six()">Delete Event</button>
+						</div>
+						<div class="small_two_of_three"></div>						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Own JS -->
+		<script>
+			document.getElementById("name_six").innerHTML = "Event 6. " + localStorage.getItem("eventSix_name");
+			document.getElementById("desc_six").innerHTML = " ' " + localStorage.getItem("eventSix_desc") + " ' ";
+		</script>
+		<script src="js/A4.js"></script>
+		<!-- End Own JS -->		
+		<!-- Bootstrap Library -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- End Bootstrap Library -->
+	</body>
+
+	<footer>
+		<div class="credits">
+			<h1>Copyright 2018</h1>
+			 <h2>Elias and Wang</h2>
+		</div>
+	</footer>
+</html>

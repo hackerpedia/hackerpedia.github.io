@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>HCI COGS 120 A5</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Links Bootstrap Library -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<!-- End Links Bootstrap Library -->
+		<link href="css/A4stylesheet.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+		<!-- JQuery Library -->
+		<script src="js/jquery.js"></script>
+		<!-- End JQuery Library -->
+	</head>
+
+	<body>
+		<div class="outer_container">
+			<div class="inner_container">
+				<div class="content_container">
+					<div class="nav_bar">
+						<div class="small_two_of_three">
+							<div class="logo_small">
+								
+							</div>
+							
+						</div>
+						<div class="big_one_of_three">
+							<div class="welcome big_label">
+								Welcome,
+								<p id="welcome"></p>
+							</div>
+						</div>
+						<div class="small_two_of_three">
+
+						</div>
+					</div>
+
+					<div class="holder">
+						<div class="homepage_button_container">
+							<a href="usersroute.html"><button class="homepage_button">View Current Route</button></a>
+							<br>
+							<a href="contactspage.html"><button class="homepage_button">View Contacts</button></a>
+							<br>
+							<a href="calender.html"><button class="homepage_button">Event Calender</button></a>
+							<br>
+						</div>
+					</div>
+
+					<div class=bottom_buttons>
+						<div class="small_two_of_three"></div>
+						<div class="big_one_of_three text_center">
+							<a class="signout_button" href="signin.html">Sign Out</a>
+						</div>
+						<div class="small_two_of_three"></div>						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Own JS -->
+		<script>
+			document.getElementById("welcome").innerHTML = localStorage.getItem("username");
+		</script>
+		<script src="js/A4.js"></script>
+		<!-- End Own JS -->		
+		<!-- Bootstrap Library -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- End Bootstrap Library -->
+	</body>
+
+	<footer>
+		<div class="credits">
+			<h1>Copyright 2018</h1>
+			 <h2>Elias and Wang</h2>
+		</div>
+	</footer>
+</html>
